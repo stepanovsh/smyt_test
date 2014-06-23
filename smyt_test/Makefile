@@ -4,7 +4,7 @@ requirements:
 	@echo "Installing requirements"
 	@pip install --exists-action=s -r ../requirements/requirements-dev.txt
 
-run: clean
+run:
 	$(ENV_PYTHON) manage.py runserver
 
 runpub:
